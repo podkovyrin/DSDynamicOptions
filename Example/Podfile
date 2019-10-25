@@ -1,0 +1,6 @@
+use_frameworks!
+target 'DSDynamicOptions_Tests' do
+  pod 'DSDynamicOptions', :path => '../'
+  
+  
+end
