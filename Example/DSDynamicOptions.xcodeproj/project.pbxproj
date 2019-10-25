@@ -25,11 +25,11 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		7365087B403EC75D48FA3376 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		7365087B403EC75D48FA3376 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		AD12AF134D6401037634F3E8 /* Pods-DSDynamicOptions_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DSDynamicOptions_Tests.release.xcconfig"; path = "Target Support Files/Pods-DSDynamicOptions_Tests/Pods-DSDynamicOptions_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		B249EE319FA7F72A712D2145 /* Pods_DSDynamicOptions_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DSDynamicOptions_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B255DAC872630213585683E2 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		DBB01C783622FC85F2F6CCDC /* DSDynamicOptions.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = DSDynamicOptions.podspec; path = ../DSDynamicOptions.podspec; sourceTree = "<group>"; };
+		B255DAC872630213585683E2 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		DBB01C783622FC85F2F6CCDC /* DSDynamicOptions.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = DSDynamicOptions.podspec; path = ../DSDynamicOptions.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		F60831117C3DC7E63A873118 /* Pods-DSDynamicOptions_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DSDynamicOptions_Tests.debug.xcconfig"; path = "Target Support Files/Pods-DSDynamicOptions_Tests/Pods-DSDynamicOptions_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -54,7 +54,6 @@
 				F60831117C3DC7E63A873118 /* Pods-DSDynamicOptions_Tests.debug.xcconfig */,
 				AD12AF134D6401037634F3E8 /* Pods-DSDynamicOptions_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -129,7 +128,7 @@
 				6003F5AA195388D20070C39A /* Sources */,
 				6003F5AB195388D20070C39A /* Frameworks */,
 				6003F5AC195388D20070C39A /* Resources */,
-				279B7CA24A7ACD6AC92BABBB /* [CP] Embed Pods Frameworks */,
+				ACCB81F5B5A0016D9637B7DC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,17 +148,13 @@
 				CLASSPREFIX = DS;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Andrew Podkovyrin";
-				TargetAttributes = {
-					6003F5AD195388D20070C39A = {
-						TestTargetID = 6003F589195388D20070C39A;
-					};
-				};
 			};
 			buildConfigurationList = 6003F585195388D10070C39A /* Build configuration list for PBXProject "DSDynamicOptions" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -185,24 +180,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		279B7CA24A7ACD6AC92BABBB /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-DSDynamicOptions_Tests/Pods-DSDynamicOptions_Tests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/DSDynamicOptions/DSDynamicOptions.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DSDynamicOptions.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DSDynamicOptions_Tests/Pods-DSDynamicOptions_Tests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		6B1A8810EEC1D2EB5D8B50DA /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -223,6 +200,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ACCB81F5B5A0016D9637B7DC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DSDynamicOptions_Tests/Pods-DSDynamicOptions_Tests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/DSDynamicOptions/DSDynamicOptions.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DSDynamicOptions.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DSDynamicOptions_Tests/Pods-DSDynamicOptions_Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -342,7 +337,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DSDynamicOptions_Example.app/DSDynamicOptions_Example";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Debug;
@@ -362,7 +356,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DSDynamicOptions_Example.app/DSDynamicOptions_Example";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;

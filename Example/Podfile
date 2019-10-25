@@ -1,6 +1,7 @@
 use_frameworks!
 target 'DSDynamicOptions_Tests' do
-  pod 'DSDynamicOptions', :path => '../'
+  platform :ios, '9.3'
   
+  pod 'DSDynamicOptions', :path => '../'
   
 end

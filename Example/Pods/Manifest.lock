@@ -1,0 +1,16 @@
+PODS:
+  - DSDynamicOptions (0.1.0)
+
+DEPENDENCIES:
+  - DSDynamicOptions (from `../`)
+
+EXTERNAL SOURCES:
+  DSDynamicOptions:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  DSDynamicOptions: 6a37eb496daee3c067e086b5b236d77707e9a3ee
+
+PODFILE CHECKSUM: 22e0f515c37966c77cfe2f853b53607e639db67e
+
+COCOAPODS: 1.8.4

@@ -1,6 +1,8 @@
 # DSDynamicOptions
 
-[![CI Status](https://img.shields.io/travis/Andrew Podkovyrin/DSDynamicOptions.svg?style=flat)](https://travis-ci.org/Andrew Podkovyrin/DSDynamicOptions)
+NSUserDefaults wrapper with dynamically generated properties.
+
+[![CI Status](https://img.shields.io/travis/podkovyrin/DSDynamicOptions.svg?style=flat)](https://travis-ci.org/podkovyrin/DSDynamicOptions)
 [![Version](https://img.shields.io/cocoapods/v/DSDynamicOptions.svg?style=flat)](https://cocoapods.org/pods/DSDynamicOptions)
 [![License](https://img.shields.io/cocoapods/l/DSDynamicOptions.svg?style=flat)](https://cocoapods.org/pods/DSDynamicOptions)
 [![Platform](https://img.shields.io/cocoapods/p/DSDynamicOptions.svg?style=flat)](https://cocoapods.org/pods/DSDynamicOptions)
@@ -10,6 +12,8 @@
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Requirements
+
+iOS 9 or later
 
 ## Installation
 
