@@ -19,6 +19,7 @@
 
 #import "DSDynamicOptions.h"
 
+#import <string.h>
 #import <objc/runtime.h>
 
 NS_ASSUME_NONNULL_BEGIN
