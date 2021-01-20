@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'DSDynamicOptions'
-  s.version          = '0.1.1'
+  s.version          = '0.1.2'
   s.summary          = 'NSUserDefaults wrapper'
 
   s.description      = <<-DESC
@@ -14,6 +14,7 @@ NSUserDefaults wrapper with dynamically generated properties.
   s.social_media_url = 'https://twitter.com/podkovyr'
 
   s.ios.deployment_target = '9.0'
+  s.osx.deployment_target  = '10.15'
 
   s.source_files = 'DSDynamicOptions/*'
 end
